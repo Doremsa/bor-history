@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="История города Бор: от монастырской слободки XIV века до современного индустриального центра. Культура, наследие, достопримечательности и знаменитые земляки.">
+  <title>Bor History</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="hero-section">
+  <div class="container py-4">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <span class="fact-badge mb-3"><i class="fas fa-tree"></i> Город трудовой доблести</span>
+        <h1 class="display-1 fw-bold">История города Бор</h1>
+        <p class="lead mt-3">Сквозь века — от монастырской слободки до современного индустриального сердца Поволжья. Хвойные леса, стекольная слава и космические горизонты.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <button class="btn btn-custom" id="surpriseBtn"><i class="fas fa-crown me-2"></i>Интересный факт</button>
+          <button class="btn btn-outline-gold" id="quoteBtn"><i class="fas fa-quote-right me-2"></i>Цитата о Боре</button>
+        </div>
+        <div id="infoAlert" class="mt-3"></div>
+      </div>
+      <div class="col-lg-5 text-center">
+        <img src="bor.png" alt="Бор символ — сосны и Волга" class="img-fluid img-float" style="max-height: 300px; width: auto; background: #cfdfc2; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="container mb-5">
+
+  <div class="row mt-3">
+    <div class="col-12">
+      <h2 class="display-2"><i class="fas fa-church me-3 text-gold"></i> Основание &nbsp;•&nbsp; 1358 год</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <p class="fs-6 lh-lg">Впервые поселение на месте современного города упоминается в исторических документах XIV века — в <strong>1358 году</strong>. Тогда оно было известно как слободка при Нижегородском Благовещенском монастыре.</p>
+          <p>Прародинами Бора считаются слободки <strong>Везломская, Копытовская и Никольская</strong>. В XIV веке слободка Никольско-Боровская преобразована в крупное село Бор.</p>
+          <div class="alert alert-light border-start border-4 border-success mt-3" role="alert">
+            <i class="fas fa-leaf text-success me-2"></i> По одной из версий, название «Бор» пошло от хвойных лесов — южной оконечности южной тайги.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="XIV.png" class="img-fluid rounded-4 shadow-sm" alt="историческая иллюстрация бора">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="display-2 mt-5"><i class="fas fa-timeline me-3"></i> Исторические этапы</h2>
+  <div class="row g-4" id="historyCardsContainer">
+    <div class="col-md-6 col-lg-4">
+      <div class="card card-hover h-100 p-3">
+        <div class="card-body">
+          <div class="mb-2"><span class="badge bg-success bg-opacity-25 text-dark px-3 py-2">1930-е</span></div>
+          <h5 class="card-title fw-bold">Индустриализация</h5>
+          <p class="card-text">Запуск Борского стекольного завода создал рабочие места, изменил демографию и превратил посёлок в промышленный центр всесоюзного значения.</p>
+          <button class="btn btn-sm btn-outline-gold mt-2 fact-card-btn" data-fact="Стекольный завод Бора выпускал рубиновое стекло для звёзд Кремля!">✨ Узнать деталь</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card card-hover h-100 p-3">
+        <div class="card-body">
+          <div class="mb-2"><span class="badge bg-success bg-opacity-25 text-dark px-3 py-2">1938</span></div>
+          <h5 class="card-title fw-bold">Городской статус</h5>
+          <p class="card-text">Официальное признание Бора городом дало старт градостроительству: капитальное жилье, школы, больницы.</p>
+          <button class="btn btn-sm btn-outline-gold mt-2 fact-card-btn" data-fact="В 1938 году население Бора составляло около 12 тыс. человек, сегодня — почти 80 тыс.">📜 Интересно</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card card-hover h-100 p-3">
+        <div class="card-body">
+          <div class="mb-2"><span class="badge bg-success bg-opacity-25 text-dark px-3 py-2">1941–1945</span></div>
+          <h5 class="card-title fw-bold">Оборонный комплекс</h5>
+          <p class="card-text">Освоены сложнейшие технологии: триплекс для авиации, бронестекло. Вклад в Победу отмечен званием «Город трудовой доблести».</p>
+          <button class="btn btn-sm btn-outline-gold mt-2 fact-card-btn" data-fact="В 2020 году Бору присвоено звание «Город трудовой доблести» за героизм жителей в годы войны.">⭐ Гордость</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card card-hover h-100 p-3">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">🚢 Судоремонт и машиностроение</h5>
+          <p class="card-text">Завод «Нижегородский Теплоход» укрепил связи с речным флотом, способствовал развитию прибрежных территорий.</p>
+          <button class="btn btn-sm btn-outline-gold mt-2 fact-card-btn" data-fact="Завод «Нижегородский Теплоход» производит современные суда для Волги, продолжая традиции судоремонта с 1930-х годов.">⚓ Подробнее</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card card-hover h-100 p-3">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">🌉 1965 — Мост через Волгу</h5>
+          <p class="card-text">Открытие первого постоянного автодорожного моста, соединившего Бор с Нижним Новгородом.</p>
+          <button class="btn btn-sm btn-outline-gold mt-2 fact-card-btn" data-fact="Мост через Волгу стал символом единства берегов: до этого сообщение было только по льду и паромам.">🌉 История моста</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card card-hover h-100 p-3">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">🚠 2012 — Канатная дорога</h5>
+          <p class="card-text">Пассажирская канатная дорога через Волгу — важный транспорт и популярный туристический аттракцион.</p>
+          <button class="btn btn-sm btn-outline-gold mt-2 fact-card-btn" data-fact="Протяжённость канатки — 3,6 км, это одна из самых длинных в Европе! Кабинки вмещают до 8 человек.">🎡 Подробнее</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="display-2 mt-4"><i class="fas fa-camera-retro me-3"></i> Достопримечательности</h2>
+  <div class="row g-4">
+    <div class="col-md-5">
+      <div class="list-group list-group-flush bg-transparent">
+        <div class="list-group-item bg-transparent border-0 ps-0"><i class="fas fa-museum text-success me-3"></i> <strong>Борский историко-краеведческий музей</strong> – многовековая история края.</div>
+        <div class="list-group-item bg-transparent border-0 ps-0"><i class="fas fa-flask text-success me-3"></i> <strong>Музей истории Борского стекольного завода</strong> – рубиновые звёзды Кремля.</div>
+        <div class="list-group-item bg-transparent border-0 ps-0"><i class="fas fa-church text-success me-3"></i> <strong>Сергиевская слобода</strong> – Николо-Знаменский и Сергиевский храмы.</div>
+        <div class="list-group-item bg-transparent border-0 ps-0"><i class="fas fa-tree text-success me-3"></i> <strong>Парк «Моховые горы»</strong> – смотровые площадки, «большое ухо», панорамы Волги.</div>
+      </div>
+      <div class="mt-4">
+        <button id="showPlacesBtn" class="btn btn-custom w-100"><i class="fas fa-map-marked-alt me-2"></i>Показать туристический маршрут</button>
+        <div id="placesMessage" class="mt-2 small text-secondary"></div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="row g-2">
+        <div class="col-6"><img src="museum.png" class="gallery-img" alt="музей"></div>
+        <div class="col-6"><img src="zavod.png" class="gallery-img" alt="стекло"></div>
+        <div class="col-6"><img src="sloboda.png" class="gallery-img" alt="слобода"></div>
+        <div class="col-6"><img src="mokhovye.png" class="gallery-img" alt="парк"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <h2 class="display-2 mt-5"><i class="fas fa-star-of-life me-3"></i> Знаменитые земляки</h2>
+  <div class="accordion" id="accordionFamous">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNeg" aria-expanded="true">
+          <span><i class="fas fa-atom me-2"></i> Евгений Аркадьевич Негин</span>
+        </button>
+      </h2>
+      <div id="collapseNeg" class="accordion-collapse collapse show" data-bs-parent="#accordionFamous">
+        <div class="accordion-body">
+          <strong>Евгений Аркадьевич Негин</strong> (1921–1998) — академик РАН, генерал-лейтенант, Герой Социалистического Труда. Родился в селе Бор. Внёс вклад в создание термоядерного оружия, руководил подводным ядерным испытанием. Лауреат Ленинской и Сталинских премий. Почётный гражданин Сарова.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZud" aria-expanded="false">
+          <span><i class="fas fa-rocket me-2"></i> Вячеслав Дмитриевич Зудов</span>
+        </button>
+      </h2>
+      <div id="collapseZud" class="accordion-collapse collapse" data-bs-parent="#accordionFamous">
+        <div class="accordion-body">
+          <strong>Вячеслав Дмитриевич Зудов</strong> (1942–2024) — лётчик-космонавт СССР, Герой Советского Союза. Родился в Бору. Совершил полёт на «Союзе-23». За мужество и героизм награждён орденом Ленина и медалью «Золотая Звезда».
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKabl" aria-expanded="false">
+          <span><i class="fas fa-microscope me-2"></i> Евгений Николаевич Каблов</span>
+        </button>
+      </h2>
+      <div id="collapseKabl" class="accordion-collapse collapse" data-bs-parent="#accordionFamous">
+        <div class="accordion-body">
+          <strong>Евгений Николаевич Каблов</strong> (род. 1952) — выдающийся учёный в области материаловедения, академик РАН, Герой Труда РФ. Родился в городе Бор. Генеральный директор Всероссийского института авиационных материалов (ВИАМ). Под его руководством созданы уникальные жаропрочные сплавы и композиты для авиации и космоса. Лауреат Государственных премий, кавалер орденов «За заслуги перед Отечеством».
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGol" aria-expanded="false">
+          <span><i class="fas fa-hard-hat me-2"></i> Алексей Григорьевич Голубев</span>
+        </button>
+      </h2>
+      <div id="collapseGol" class="accordion-collapse collapse" data-bs-parent="#accordionFamous">
+        <div class="accordion-body">
+          <strong>Алексей Григорьевич Голубев</strong> (1926–1996) — строитель, Герой Социалистического Труда. Уроженец Борского района. Бригадир передовой бригады строителей, участвовал в возведении ключевых промышленных объектов Горьковской области, в том числе масштабных цехов Борского стекольного завода. Награждён орденами Ленина и Трудового Красного Знамени.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStr" aria-expanded="false">
+          <span><i class="fas fa-university me-2"></i> Роман Григорьевич Стронгин</span>
+        </button>
+      </h2>
+      <div id="collapseStr" class="accordion-collapse collapse" data-bs-parent="#accordionFamous">
+        <div class="accordion-body">
+          <strong>Роман Григорьевич Стронгин</strong> (род. 1957) — российский политик, ректор Нижегородского государственного университета им. Н.И. Лобачевского (2008–2012), депутат Государственной думы. Родился в городе Бор. Внёс значительный вклад в развитие высшего образования и науки в Нижегородской области. Заслуженный работник высшей школы РФ.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
