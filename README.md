@@ -21,8 +21,11 @@
 
 ### Использованные технологии:
 ![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?logo=html5&logoColor=white) Семантическая разметка с логичной структурой разделов.
+
 ![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?logo=css3&logoColor=white) Кастомные стили, цветовая схема, анимации и hover-эффекты.
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?logo=javascript&logoColor=black) Интерактивные элементы — аккордеон, случайные факты, динамические кнопки.
+
 ![Bootstrap](https://img.shields.io/badge/Bootstrap%205-%237952B3.svg?logo=bootstrap&logoColor=white) Адаптивная сетка и готовые UI-компоненты.
 
 ---
@@ -44,6 +47,9 @@ A single-page website dedicated to the history of Bor: from its founding in the 
 
 ### Technologies Used:
 ![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?logo=html5&logoColor=white) Semantic markup with a well-structured section hierarchy.
+
 ![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?logo=css3&logoColor=white) Custom styles, color scheme, animations and hover effects.
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?logo=javascript&logoColor=black) Interactive elements — accordion, random facts, dynamic buttons.
+
 ![Bootstrap](https://img.shields.io/badge/Bootstrap%205-%237952B3.svg?logo=bootstrap&logoColor=white) Responsive grid system and ready-made UI components.
